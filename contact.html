@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Restaurant Wesite</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!--  CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- ------------main css file------- -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <script>
+    function validateNumber(e) {
+      const pattern = /^[0-9]$/;
+
+      return pattern.test(e.key)
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Top Bar  -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+
+    </div>
+  </div>
+
+  <!--  Header -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html">About</a></li>
+          <li><a class="nav-link scrollto" href="menu.html">Menu</a></li>
+          <li><a class="nav-link scrollto" href="specials.html">Specials</a></li>
+
+          <li><a class="nav-link scrollto" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto active" href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- navbar -->
+      <a href="book.html" class="book-a-table-btn scrollto d-none d-lg-flex">Book a table</a>
+
+    </div>
+  </header><!-- End Header -->
+  <br>
+  <br>
+  <br>
+
+  <!--  Contact Section  -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Contact Us</p>
+      </div>
+    </div>
+
+    <div data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3501.990380608873!2d77.3763518!3d28.6300504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff8864e0cf1%3A0xa20290bf75099ebd!2sBSI%20Business%20Park%20H15!5e0!3m2!1sen!2sin!4v1687343271370!5m2!1sen!2sin"
+        frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+    </div>
+
+    <div class="container" data-aos="fade-up">
+
+      <div class="row mt-5">
+
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p> Noida Sector-63<br>
+                Uttar Pradesh,
+                G.B.Nagar.</p>
+            </div>
+
+            <div class="open-hours">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>
+                Monday-Saturday:<br>
+                11:00 AM - 23:00 PM
+              </p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>hungry@gmail.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+91 9784685856</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <form method="post" id="frmContactus" class="php-email-form">
+            <div class="contact-form">
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="name">Name:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" placeholder="Enter name"
+                    title="plz enter valid name" name="name" required onkeydown="return /[a-z  A-Z]/i.test(event.key)">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="mobile">Mobile:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="mobile" placeholder="Enter mobile" name="mobile" required
+                    onkeypress="return validateNumber(event)" placeholder="Enter mobile" maxlength="10" minlength="10">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-sm-2" for="comment">Comment:</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default" name="submit" id="submit">Submit</button>
+                  <span style="color:red;" id="msg"></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      jQuery('#frmContactus').on('submit', function (e) {
+        jQuery('#msg').html('');
+        jQuery('#submit').html('Please wait');
+        jQuery('#submit').attr('disabled', true);
+        jQuery.ajax({
+          url: 'submit.php',
+          type: 'post',
+          data: jQuery('#frmContactus').serialize(),
+          success: function (result) {
+            jQuery('#msg').html(result);
+            jQuery('#submit').html('Submit');
+            jQuery('#submit').attr('disabled', false);
+            jQuery('#frmContactus')[0].reset();
+          }
+        });
+        e.preventDefault();
+      });
+    </script>
+    </div>
+
+    </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+
+  <!-- Footer  -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Restaurant</h3>
+              <p>
+                Noida Sector-63<br>
+                Uttar Pradesh,
+                G.B.Nagar,<br>
+                India<br><br>
+              </p>
+
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+
+              <li><i class="bx bx-chevron-right"></i> <a href="menu.html">Menu</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="specials.html">Specials</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact Us</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Contact us</h4>
+            <p>
+
+              <strong>Phone:</strong> 91+ 8746576876<br>
+              <strong>Email:</strong> hungry@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Us</h4>
+            <div class="social-links mt-3">
+              <a href="https:\\www.twitter.com" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https:\\www.facebook.com" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https:\\www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https:\\www.skype.com" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="https:\\www.linkedin.com" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Restaurant</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
